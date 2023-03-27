@@ -5,10 +5,13 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+	<meta name="description" content="Solución a un challenge nivel Intermedio de frontendmentor.io usando HTML, CSS3 y JavaScript"/>
+	<meta name="keywords" content="FrontendMentor.io, Challenges ,HTML & CSS, JavaScript"/>
+	<meta name="author" content="José Alvarado" />
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600&display=swap" rel="stylesheet">
-  <title>Bookmark landing page</title>
+  <title>Frontend Mentor | Bookmark landing page</title>
   <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
@@ -58,7 +61,7 @@
 
 		</nav>
 
-		<section class="hero__main">
+		<section class="hero__main container">
 			<figure class="hero__figure">
 				<img class="hero__img" src="./assets/illustration-hero.svg" alt="Illustration hero"/>
 			</figure>
@@ -150,7 +153,7 @@
 				</p>
 			</article>
 			<div class="download__cards">
-				<div class="card">
+				<div class="card card--1">
 					<figure class="card__figure">
 						<img class="card__img" src="./assets/logo-chrome.svg" alt="icon chrome"/>
 					</figure>
@@ -161,7 +164,7 @@
 					<a href="#" class="card_cta">Add & Install Extension</a>
 				</div>
 
-				<div class="card">
+				<div class="card card--2">
 					<figure class="card__figure">
 						<img class="card__img" src="./assets/logo-firefox.svg" alt="icon chrome"/>
 					</figure>
@@ -172,7 +175,7 @@
 					<a href="#" class="card_cta">Add & Install Extension</a>
 				</div>
 
-				<div class="card">
+				<div class="card card--3">
 					<figure class="card__figure">
 						<img class="card__img" src="./assets/logo-opera.svg" alt="icon chrome"/>
 					</figure>
@@ -209,10 +212,10 @@
 				<div class="question">
 					<div class="flex-between">
 						<p class="asked">How can I request a new browser?</p>
-						<img class="asked__img--blue" src="./assets/icon-arrow.svg" alt="icon arrow"/>
-						<img class="asked__img--red is-active" src="./assets/icon-arrow-active.svg" alt="icon arrow active"/>
+						<img class="asked__img--blue is-active" src="./assets/icon-arrow.svg" alt="icon arrow"/>
+						<img class="asked__img--red" src="./assets/icon-arrow-active.svg" alt="icon arrow active"/>
 					</div>
-					<p class="paragraph response is-active">
+					<p class="paragraph response">
 					  Vivamus luctus eros aliquet convallis ultricies. Mauris augue massa, ultricies non ligula.
 					  Suspendisse imperdiet. Vivamus luctus eros aliquet convallis ultricies. Mauris augue massa,
 					  ultricies non ligula. Suspendisse imperdie tVivamus luctus eros aliquet convallis ultricies.
@@ -257,10 +260,10 @@
 				</article>
 
 				<form class="contact__form">
-					<div class="input__container is-active">
-						<input class="contact__input" name="email" type="email" placeholder="Enter your email address"/>
-						<img class="input__error--icon is-active" src="./assets/icon-error.svg" alt="icon error"/>
-						<p class="input__error--message is-active">Whoops, make sure it's an email</p>
+					<div class="input__container">
+						<input class="contact__input" pattern="^[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?$" name="email" type="email" placeholder="Enter your email address" required/>
+						<img class="input__error--icon" src="./assets/icon-error.svg" alt="icon error"/>
+						<p class="input__error--message">Whoops, make sure it's an email</p>
 					</div>
 					<button type="submit" class="btn-send">Contact Us</button>
 				</form>
@@ -288,7 +291,7 @@
 				</ul>
 			</div>
 			<div class="footer__media">
-				<img src="./assets/icon-facebook.svg" alt="icon facebook" class="footer__social"/>
+				<svg class="footer__social" xmlns="http://www.w3.org/2000/svg" width="24" height="24"><path fill="#FFF" fill-rule="evenodd" d="M22.675 0H1.325C.593 0 0 .593 0 1.325v21.351C0 23.407.593 24 1.325 24H12.82v-9.294H9.692v-3.622h3.128V8.413c0-3.1 1.893-4.788 4.659-4.788 1.325 0 2.463.099 2.795.143v3.24l-1.918.001c-1.504 0-1.795.715-1.795 1.763v2.313h3.587l-.467 3.622h-3.12V24h6.116c.73 0 1.323-.593 1.323-1.325V1.325C24 .593 23.407 0 22.675 0z"/></svg>
 				<img src="./assets/icon-twitter.svg" alt="icon twitter" class="footer__social"/>
 			</div>
 		</div>

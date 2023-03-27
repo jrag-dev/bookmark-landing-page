@@ -19,9 +19,9 @@ This is a solution to the [Bookmark landing page challenge on Frontend Mentor](h
 
 ### Screenshot
 
-![Mobile](./assets/mobile.png)
-![Mobile](./assets/mobile-menu.png)
-![Desktop](./assets/desktop.png)
+![Mobile](./assets/readme-img/mobile.png)
+![Mobile](./assets/readme-img/mobile-menu.png)
+![Desktop](./assets/readme-img/desktop.png)
 
 
 ### Links
